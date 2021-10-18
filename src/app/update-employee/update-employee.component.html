@@ -1,0 +1,36 @@
+<html>
+    <body class="bg">
+        <div>
+            <h1 class="head">UPDATE EMPLOYEE :</h1>
+            <form class="form" [formGroup]="updateEmployeedata" (ngSubmit)="UpdateFunction()">
+
+                <p class="head2"><b>ENTER  EMPLOYEE ID :</b></p>
+                <label>
+                    <input type="text" placeholder="EMPLOYEE ID" formControlName="empId">
+                    <div *ngIf="getControl.empId.touched && getControl.empId.invalid" class="text-danger">
+                     <div *ngIf="getControl.empId.errors?.required">Employee Id is required</div>
+                     <div *ngIf="getControl.empId.errors?.minlength">please enter the valid Employee ID</div>   
+                    </div>
+                </label> <br>
+
+                <p class="head3"><b> UPDATE :</b></p>
+
+                <label>
+                    <input type="date" placeholder="DATE OF BIRTH" formControlName="dob">
+                </label> <br>
+
+                <label>
+                    <input type="number" placeholder="PHONE NUMBER" formControlName="mobile">
+                </label> <br>
+
+                <label>
+                    <input type="text" placeholder="ADDRESS" formControlName="address">
+                </label> <br>
+
+                <button class="btn1" (click)="updateEmployeeFun()" type="submit" value="button">*UPDATE*</button>
+                <button class="btn2" type="reset" value="button_2">RESET</button><br>
+                <h3><b>{{updateemp}}</b></h3>
+            </form>
+        </div>
+    </body>
+</html>

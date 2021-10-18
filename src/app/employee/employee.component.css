@@ -1,0 +1,71 @@
+.Employee {
+    padding-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.head {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;
+    text-decoration: orchid;
+}
+.btn1 {
+    border-radius: 30px;
+    color: purple;
+    margin-right: 16px;
+}
+.btn1:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+
+.btn2 {
+    border-radius: 30px;
+    color:red;
+}
+.btn2:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+.login {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;
+    text-decoration: orchid;
+}
+.form1 {
+    padding-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.btn01 {
+    border-radius: 30px;
+    color: purple;
+    margin-right: 16px;
+}
+.btn01:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+
+.btn02 {
+    border-radius: 30px;
+    color:red;
+}
+.btn02:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+.message2 {
+    color: red;
+}
+.message1 {
+    color: rgb(22, 131, 76);
+}
+.bg {
+    background-color: aliceblue;
+}
+
+

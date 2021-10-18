@@ -1,0 +1,17 @@
+.high {
+    color:crimson;
+}
+
+.center {
+    padding-left: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head {
+    text-align: center;
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg {
+    background-color:aliceblue;
+}

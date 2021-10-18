@@ -1,0 +1,25 @@
+<html>
+    <body class="bg">
+        <h1 class="head"><b>SHOW ALL EMPLOYEE RECORDS :</b></h1>
+        <div class="center">
+        <div *ngIf="a">
+           <ul *ngFor="let items of showemp">
+            <li class="high"><b>EMPLOYEE NAME : {{items._id.Empname}}</b></li>
+            <li><b>EMPLOYEE ID :</b> {{items._id.empId}}</li>
+            <li><b>EMAIL ID :</b> {{items._id.email}}</li>
+            <li><b>PHONE NUMBER :</b>{{items._id.mobile}}</li>
+            <li><b>DATE OF BIRTH :</b> {{items._id.dob}}</li>
+            <li><b>GENDER :</b> {{items._id.gender}}</li>
+            <li><b>ADDRESS :</b> {{items._id.address}}</li>
+            <li><b>STATUS :</b>{{items._id.isActive}}</li>
+            <li><b>CREATED DATE :</b>{{items._id.date}}</li>
+            <p>.............................................</p>
+           </ul>
+           
+        </div>
+        <div *ngIf="b">
+            <p><b>{{showemp}}</b></p>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+    <body class="bg">
+         
+        <!-- CREATE EMPLOYEE  -->
+
+        <div>
+            <h1 class="head"><b>CREATE EMPLOYEE :</b></h1>
+            <form class="Employee" [formGroup]="employeedata" (ngSubmit)="EmployeeFunction()">
+                <label>
+                    <input type="text" placeholder="EMPLOYEE NAME" formControlName="Empname">
+                </label> <br>
+
+                <label>
+                    <input type="text" placeholder="EMPLOYEE ID" formControlName="empId">
+                    <div *ngIf="getControl.empId.touched && getControl.empId.invalid" class="alert alert-danger">
+                    <div *ngIf="getControl.empId.errors?.required">Employee Id is required</div>
+                    <div *ngIf="getControl.empId.errors?.maxlength">Enter the valid Employee Id</div> 
+                    </div>
+                </label> <br>
+
+                <label>
+                    <input type="email" placeholder="EMAIL ID" formControlName="email">
+                    <div *ngIf="getControl.email.touched && getControl.email.invalid" class="text-danger">
+                    <div *ngIf="getControl.email.errors?.required">Email is required.</div>
+                    <div *ngIf="getControl.email.errors?.email">please enter the valid email Id</div>
+                    </div>
+                </label> <br>
+
+                <label>
+                    <input type="number" placeholder="PHONE NUMBER" formControlName="mobile">
+                    <div *ngIf="getControl.mobile.touched && getControl.mobile.invalid" class="text-danger">
+                    <div *ngIf="getControl.mobile.errors?.required">Number is required</div>
+                    </div>
+                </label> <br>
+
+                <label>
+                    <input type="date" placeholder="DATE OF BIRTH" formControlName="dob">
+                </label> <br>
+
+                <label>
+                    <input type="password" placeholder="PASSWORD" formControlName="password">
+                    <div *ngIf="getControl.password.touched && getControl.password.invalid" class="text-danger">
+                        <div *ngIf="getControl.password.errors?.required">password is required.</div>
+                        <div *ngIf="getControl.password.errors?.minlength">Minimum 8 characters required.</div>
+                        <div *ngIf="getControl.password.errors?.maxlength">Maximum 8 characters required.</div>
+                    </div>
+                </label> <br>
+
+                <label>
+                    <div>
+                        <input id="male" type="radio" value="male" name="gender" formControlName="gender">
+                        <label for="male">Male</label>
+                      </div>
+                      <div>
+                        <input id="female" type="radio" value="female" name="gender" formControlName="gender">
+                        <label for="female">Female</label>
+                     </div>
+                      <div>
+                         <input id="others" type="radio" value="others" name="gender" formControlName="gender">
+                         <label for="others">Others</label>
+                     </div> 
+                </label> <br>
+
+                <label>
+                    <input type="text" placeholder="PERMANENT ADDRESS" formControlName="address">
+                    <div *ngIf="getControl.address.touched && getControl.address.invalid" class="text-danger">
+                    <div *ngIf="getControl.address.errors?.required">Address required</div>
+                    </div> 
+                </label> <br>
+
+                <button class="btn1" (click)="EmployeeDataFun()" type="submit" value="button">*CREATE*</button>
+                <button class="btn2" type="reset" value="button_1">RESET</button>
+                <h2 class="message1" *ngIf="a"><b>{{empcreate}}</b></h2>
+                <h2 class="message2" *ngIf="b"><b>{{empcreate}}</b></h2> <br><br>
+         <p>...........................( or ).............................</p>
+            </form>
+            
+        </div>
+
+        <!-- LOGIN EMPLOYEE -->
+
+        <div>
+            <h1 class="login"><b>LOGIN EMPLOYEE :</b></h1>
+            <form class="form1" [formGroup]="LoginEmpdata" (ngSubmit)="LoginFunction()">
+                <label>
+                    <input type="email" placeholder="EMAIL ID" formControlName="email">
+                </label> <br>
+
+                <label>
+                    <input type="password" placeholder="PASSWORD" formControlName="password">
+                </label> <br>
+
+                <button class="btn01" (click)="LoginEmployeeFun()" type="submit" value="button">*LOGIN*</button>
+                <button class="btn2" type="reset">RESET</button>
+                <h2 *ngIf="c"><b>{{loginemp}}</b></h2>
+                <h3 *ngIf="d"><b>{{loginemp}}</b></h3>
+            </form>
+        </div>
+
+        
+
+    </body>
+</html>

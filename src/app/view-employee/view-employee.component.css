@@ -1,0 +1,36 @@
+.head {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: coral;
+    font-style: inherit;
+    font-weight: 900;
+    text-decoration: lightcoral;
+}
+.form {
+    padding-left: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.high {
+    color: crimson;
+}
+div .btn1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    margin-right: 16px;
+}
+.btn1:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+div .btn2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    margin-right: 16px;
+}
+.btn2:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+.bg {
+    background-color:aliceblue;
+}

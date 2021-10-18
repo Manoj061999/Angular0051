@@ -1,0 +1,15 @@
+<html>
+    <body class="BG">
+        <div>
+            <h1 class="head"><b>DELETE EMPLOYEE :</b></h1>
+            <form class="form" [formGroup]="deletedata" (ngSubmit)="deleteFunction()">
+                <label>
+                    <input type="text" placeholder="EMPLOYEE ID" formControlName="empId">
+                </label> <br>
+
+                <button class="btn1" (click)="DeleteEmployeeFun()" type="submit" value="button">DELETE</button>  <button class="btn2" type="reset" value="button_2">RESET</button>
+                <h3><b>{{empdel}}</b></h3>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <body class="bg">
+        <div>
+            <h1 class="head"><b>SEARCH EMPLOYEE USING EMPLOYEE ID :</b></h1>
+            <form class="form" [formGroup]="searchdata" (ngSubmit)="SearchFunction()">
+                <label>
+                    <input type="text" placeholder="EMPLOYEE ID" formControlName="empId">
+                </label> <br>
+
+                <button class="btn1" (click)="SearchEmployeeFun()" type="submit" value="button">SEARCH BY ID</button>
+                <button class="btn2" type="reset" value="button">RESET</button>
+                <div *ngIf="a">
+                    <ul *ngFor="let data of searchemp">
+                     <li class="high"><b>EMPLOYEE NAME : {{data.Empname}}</b></li>
+                     <li><b>EMPLOYEE ID :</b> {{data.empId}}</li>
+                     <li><b>EMAIL ID :</b> {{data.email}}</li>
+                     <li><b>PHONE NUMBER :</b> {{data.mobile}}</li>
+                     <li><b>DATE OF BIRTH :</b> {{data.dob}}</li>
+                     <li><b>GENDER :</b> {{data.gender}}</li>
+                     <li><b>ADDRESS :</b> {{data.address}}</li>
+                     <li><b>CREATED DATE & TIME :</b> {{data.createdOn}}</li>
+                     <p>....................END..................</p>
+                    </ul>
+                </div>
+                <div *ngIf="b">
+                    <p><b>{{searchemp}}</b></p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

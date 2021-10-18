@@ -1,0 +1,38 @@
+.form {
+    padding-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.head {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: coral;
+    font-style: inherit;
+    font-weight: 900;
+    text-decoration: lightcoral;
+}
+.head2 {
+    color:maroon;
+}
+.head3 {
+    color:maroon;
+}
+.btn1 {
+    border-radius: 30px;
+    color:indigo;
+    margin-right: 16px; 
+}
+.btn1:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+.btn2 {
+    border-radius: 30px;
+    color: mediumblue;
+}
+.btn2:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+}
+.bg {
+    background-color:aliceblue;
+}

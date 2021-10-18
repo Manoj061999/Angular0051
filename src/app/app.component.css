@@ -1,0 +1,63 @@
+.header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(15, 82, 206);
+    color: white;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: magenta;
+    text-overflow: ellipsis;
+  }
+  div .btn1 {
+    margin-right: 16px;
+    border-radius: 30px;
+  }
+  .btn1:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+  }
+
+  div .btn2 {
+    margin-right: 16px;
+    border-radius: 30px;
+  }
+  .btn2:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+  }
+
+  div .btn3 {
+    margin-right: 16px;
+    border-radius: 30px;
+  }
+  .btn3:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+  }
+
+  div .btn4 {
+    margin-right: 16px;
+    border-radius: 30px;
+  }
+  .btn4:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+  }
+
+  div .btn0 {
+    margin-right: 100px;
+    border-radius: 30px;
+  }
+  .btn0:hover {
+    background-color: deeppink;
+    color: ghostwhite;
+  }
+
+
+  .footer {
+    padding: 5px;
+    text-align: center;
+    background: rgb(15, 82, 206);
+    color: white;
+    font-size: x-large;
+  }
